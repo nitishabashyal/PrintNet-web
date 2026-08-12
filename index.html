@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printnet | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Authentication -->
+    <script src="auth.js"></script>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-print"></i>
+            <span>Printnet</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="shop.html">Shop</a></li>
+
+            <li><a href="marketplace.html">Marketplace</a></li>
+
+            <li><a href="ai.html">AI Assistant</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-right">
+
+            <span class="welcome">
+                Welcome,
+                <strong id="userEmail">User</strong>
+            </span>
+
+            <button class="logout-btn" onclick="logout()">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Find the Perfect Printer for Every Need
+        </h1>
+
+        <p>
+
+            Printnet helps you discover the best printers,
+            compare specifications, shop online,
+            buy or sell used printers,
+            and get AI-powered recommendations.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="shop.html" class="btn primary">
+
+                Shop Now
+
+            </a>
+
+            <a href="ai.html" class="btn secondary">
+
+                AI Recommendation
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=900&q=80"
+        alt="Printer">
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <h2>Why Choose Printnet?</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-print"></i>
+
+            <h3>Latest Printers</h3>
+
+            <p>
+
+                Browse the newest inkjet,
+                laser,
+                all-in-one,
+                and office printers.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>AI Recommendation</h3>
+
+            <p>
+
+                Let AI recommend the perfect printer
+                according to your budget and needs.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h3>Easy Shopping</h3>
+
+            <p>
+
+                Add products to your cart
+                and enjoy a simple shopping experience.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-recycle"></i>
+
+            <h3>Used Marketplace</h3>
+
+            <p>
+
+                Buy and sell second-hand printers
+                safely and easily.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<section class="featured">
+
+    <h2>Featured Printers</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <img src="hp laser jet pro MFP M28a.jpg">
+            <h3>HP LaserJet Pro MFP M28a</h3>
+
+            <p>Fast monochrome laser printer.</p>
+
+            <span>Rs 26,000</span>
+
+            <a href="shop.html" class="buy-btn">
+                View Details
+            </a>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="canon pixma G2020.jpg">
+
+            <h3>Canon PIXMA G2020 </h3>
+
+            <p>High-quality color printing.</p>
+
+            <span>Rs 21,499</span>
+
+            <a href="shop.html" class="buy-btn">
+                View Details
+            </a>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="epson eco tank.jpg">
+
+            <h3>Epson EcoTank L18050 </h3>
+
+            <p>Low-cost ink replacement.</p>
+
+            <span>Rs 99,990</span>
+
+            <a href="shop.html" class="buy-btn">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat">
+
+        <h2>10K+</h2>
+
+        <p>Customers</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>500+</h2>
+
+        <p>Printers</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>99%</h2>
+
+        <p>Positive Reviews</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>24/7</h2>
+
+        <p>AI Support</p>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <h2>What Customers Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial">
+
+            <p>
+
+                "Printnet made it incredibly easy to
+                choose the perfect printer for my office."
+
+            </p>
+
+            <h4>- Sarah M.</h4>
+
+        </div>
+
+        <div class="testimonial">
+
+            <p>
+
+                "The AI assistant recommended exactly
+                what I needed within my budget."
+
+            </p>
+
+            <h4>- David K.</h4>
+
+        </div>
+
+        <div class="testimonial">
+
+            <p>
+
+                "I sold my old printer in just two days
+                using the marketplace."
+
+            </p>
+
+            <h4>- Alex T.</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <h2>Stay Updated</h2>
+
+    <p>
+
+        Subscribe to receive printer deals,
+        product launches,
+        and AI tips.
+
+    </p>
+
+    <form>
+
+        <input
+        type="email"
+        placeholder="Enter your email">
+
+        <button type="submit">
+
+            Subscribe
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>Printnet</h3>
+
+            <p>
+
+                Your one-stop destination
+                for printers,
+                printer accessories,
+                AI recommendations,
+                and second-hand printer marketplace.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="shop.html">Shop</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="ai.html">AI Assistant</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Printnet. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

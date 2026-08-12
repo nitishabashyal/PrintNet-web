@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printnet | Shop</title>
+
+    <link rel="stylesheet" href="shop.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="auth.js"></script>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-print"></i>
+            <span>Printnet</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="shop.html" class="active">Shop</a></li>
+
+            <li><a href="marketplace.html">Marketplace</a></li>
+
+            <li><a href="ai.html">AI Assistant</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-actions">
+
+            <button class="cart-btn" onclick="window.location.href='#cart'">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </button>
+
+            <button class="logout-btn" onclick="logout()">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= PAGE HEADER ================= -->
+
+<section class="page-header">
+
+    <h1>Printer Store</h1>
+
+    <p>
+
+        Browse printers, cartridges, toner,
+        papers and accessories.
+
+    </p>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search printers...">
+
+        <button>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FILTERS ================= -->
+
+<section class="filters">
+
+    <button class="filter-btn active" data-category="all">
+
+        All Products
+
+    </button>
+
+    <button class="filter-btn" data-category="printer">
+
+        Printers
+
+    </button>
+
+    <button class="filter-btn" data-category="ink">
+
+        Ink
+
+    </button>
+
+    <button class="filter-btn" data-category="paper">
+
+        Paper
+
+    </button>
+
+    <button class="filter-btn" data-category="accessories">
+
+        Accessories
+
+    </button>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products">
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+
+        <div class="product-card" data-category="printer">
+
+           <img src="hp laser jet pro MFP M28a.jpg">
+            <h3>HP LaserJet Pro MFP M28a</h3>
+
+            <p>Fast monochrome laser printer.</p>
+
+            <span>Rs 26,000</span>
+
+            <button
+            class="add-cart"
+            data-name="HP LaserJet Pro MFP M28a"
+            data-price="26,000">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 2 -->
+
+        <div class="product-card" data-category="printer">
+
+             <img src="epson eco tank.jpg">
+
+            <h3>Epson EcoTank L18050 </h3>
+
+            <p>Low-cost ink replacement.</p>
+
+            <span>Rs 99,990</span>
+
+            <button
+            class="add-cart"
+            data-name="Epson EcoTank L18050"
+            data-price="99,990">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 3 -->
+
+        <div class="product-card" data-category="printer">
+
+            <img src="hp laser jet pro MFP M28a.jpg">
+            <h3>HP LaserJet Pro MFP M28a</h3>
+
+            <p>Fast monochrome laser printer.</p>
+
+            <span>Rs 26,000</span>
+
+            <button
+            class="add-cart"
+            data-name="HP LaserJet Pro MFP M28a"
+            data-price="26,000">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 4 -->
+
+        <div class="product-card" data-category="ink">
+
+            <img src="Canon PG-88 (Black) and CL-98 (Colour) Ink Cartridge Combo For Pixma E500, E510, E610.png">
+            <h3>Canon PG-88 (Black) and CL-98 (Colour) Ink Cartridge Combo For Pixma E500, E510, E610</h3>
+
+            <p>Compatible with Canon printers.</p>
+
+            <span>Rs 5,200</span>
+
+            <button
+            class="add-cart"
+            data-name="Canon PG-88 (Black) and CL-98 (Colour) Ink Cartridge Combo For Pixma E500, E510, E610.png"
+            data-price="29">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 5 -->
+
+        <div class="product-card" data-category="ink">
+
+            <img src="ink.jpg">
+            <h3>Color Ink </h3>
+
+            <p>Premium  refill kit.</p>
+
+            <span>Rs 190</span>
+
+            <button
+            class="add-cart"
+            data-name="Color Ink "
+            data-price="190">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 6 -->
+
+        <div class="product-card" data-category="paper">
+
+            <img src="paper box double a.jpg">
+            <h3>Top Double A Premium A4 Paper 80 GSM - 2500 Sheets</h3>
+
+            <p>2500 sheets paper box.</p>
+
+            <span>Rs 10,660</span>
+
+            <button
+            class="add-cart"
+            data-name="Top Double A Premium A4 Paper 80 GSM - 2500 Sheets"
+            data-price="10,660">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- Product 7 -->
+
+        <div class="product-card" data-category="paper">
+
+            <img src="Glossy Photo Paper.jpg">
+
+            <h3>Water Proof Glossy Photo Paper 4R (100 sheets) 230G</h3>
+
+            <p>Professional quality photo paper.</p>
+
+            <span>Rs 330</span>
+
+            <button
+                class="add-cart"
+                data-name="Water Proof Glossy Photo Paper 4R (100 sheets) 230G"
+                data-price="330">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 8 -->
+
+        <div class="product-card" data-category="accessories">
+
+            <img src="usb cable printer.jpg">
+
+            <h3>USB 2.0 Printer cable in 3 meters </h3>
+
+            <p>High-speed USB connection cable.</p>
+
+            <span>Rs 250</span>
+
+            <button
+                class="add-cart"
+                data-name="USB 2.0 Printer cable in 3 meters "
+                data-price="250">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 9 -->
+
+        <div class="product-card" data-category="accessories">
+
+            <img src="printer cleaning kit.png">
+
+            <h3>Printer Cleaning Kit</h3>
+
+            <p>Keep your printer performing like new.</p>
+
+            <span>Rs 1500</span>
+
+            <button
+                class="add-cart"
+                data-name="Printer Cleaning Kit"
+                data-price="1500">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 10 -->
+
+        <div class="product-card" data-category="accessories">
+
+            <img src="stand.jpg">
+
+            <h3>Printer Stand</h3>
+
+            <p>Heavy-duty wooden printer stand.</p>
+
+            <span>Rs 2,800</span>
+
+            <button
+                class="add-cart"
+                data-name="Printer Stand"
+                data-price="2,800">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 11 -->
+
+        <div class="product-card" data-category="printer">
+
+            <img src="YOUR_IMAGE_HERE">
+
+            <h3>Brother DCP-T720DW</h3>
+
+            <p>Wireless all-in-one ink tank printer.</p>
+
+            <span>$329</span>
+
+            <button
+                class="add-cart"
+                data-name="Brother DCP-T720DW"
+                data-price="329">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+        <!-- Product 12 -->
+
+        <div class="product-card" data-category="printer">
+
+            <img src="YOUR_IMAGE_HERE">
+
+            <h3>Canon ImageCLASS</h3>
+
+            <p>Compact wireless laser printer.</p>
+
+            <span>$279</span>
+
+            <button
+                class="add-cart"
+                data-name="Canon ImageCLASS"
+                data-price="279">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SHOPPING CART ================= -->
+
+<section id="cart" class="cart-section">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cartItems">
+
+        <p>Your cart is empty.</p>
+
+    </div>
+
+    <div class="cart-summary">
+
+        <h3>
+
+            Total:
+            Rs<span id="cartTotal">0</span>
+
+        </h3>
+
+        <button id="checkoutBtn">
+
+            Proceed to Checkout
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <h2>Subscribe for Offers</h2>
+
+    <p>
+
+        Receive discounts,
+        printer tips,
+        and new product updates.
+
+    </p>
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            placeholder="Enter your email">
+
+        <button type="submit">
+
+            Subscribe
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>Printnet</h3>
+
+            <p>
+
+                Nepal's modern printer marketplace.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="shop.html">Shop</a>
+
+            <a href="marketplace.html">Marketplace</a>
+
+            <a href="ai.html">AI Assistant</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div>
+
+            <h3>Customer Support</h3>
+
+            <p>Email: support@printnet.com</p>
+
+            <p>Phone: +977-9800000000</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Printnet. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="cart.js"></script>
+<script src="shop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printnet | Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="overlay"></div>
+</div>
+
+<div class="login-container">
+
+    <div class="left-side">
+
+        <div class="logo">
+            <i class="fa-solid fa-print"></i>
+            <h1>Printnet</h1>
+        </div>
+
+        <h2>Welcome Back</h2>
+
+        <p>
+            Login to access the smartest Printer Marketplace,
+            AI Recommendation System and Premium Printer Store.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=800&q=80"
+        alt="Printer">
+
+    </div>
+
+
+    <div class="right-side">
+
+        <form id="loginForm">
+
+            <h2>Sign In</h2>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required>
+            </div>
+
+            <div class="options">
+
+                <label>
+
+                    <input type="checkbox">
+                    Remember Me
+
+                </label>
+
+                <a href="#">Forgot Password?</a>
+
+            </div>
+
+            <button type="submit" class="login-btn">
+
+                Login
+
+            </button>
+
+            <div id="message"></div>
+
+            <div class="divider">
+                OR
+            </div>
+
+            <button type="button" class="google">
+
+                <i class="fab fa-google"></i>
+
+                Continue with Google
+
+            </button>
+
+            <button type="button" class="facebook">
+
+                <i class="fab fa-facebook"></i>
+
+                Continue with Facebook
+
+            </button>
+
+            <p class="register">
+
+                Don't have an account?
+
+                <a href="#">Register</a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>
